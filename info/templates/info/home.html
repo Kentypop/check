@@ -1,0 +1,201 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+</style>
+
+
+<style>
+  /* the .nav-link.active was somehow fucking up with the link. cant go to desinated link with active on */
+  .nav-link.active
+    {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+</style>
+
+<style>
+
+@media (min-width:320px)  { .jumbotron { padding: 100px 25px; } }
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+  .jumbotron {
+    padding: 100px 25px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .container-fluid {
+  padding: 60px 50px;
+  }
+
+</style>
+
+<style>
+.logo {
+  font-size: 200px;
+}
+@media screen and (max-width: 768px) {
+  .col-sm-4 {
+    text-align: center;
+    margin: 25px 0;
+  }
+}
+</style>
+</style>
+
+<style>
+div.one {
+  background-image: url('{% static 'info/images/redss2.PNG' %}');
+}
+</style> 
+
+<title> REDS </title>
+
+</head>
+<body>
+
+<!-- Base NAv -->
+<!-- https://getbootstrap.com/docs/4.5/components/navs/ -->
+<ul class="nav">
+  <li class="nav-item" style="margin: 10px;">
+    <a class="nav-link" href="{% url 'info-home' %}">Home</a>
+  </li>
+  <li class="nav-item" style="margin: 10px;">
+    <a class="nav-link" href="{% url 'info-covid' %}">Covid</a>
+  </li>
+  <li class="nav-item" style="margin: 10px;">
+    <a class="nav-link" href="{% url 'info-book' %}">Book Appointment</a>
+  </li>
+  <li>
+    <a href="https://www.facebook.com/RedsHairdressingCitySquare" class="fa fa-facebook"></a>
+  </li>
+  <li>
+    <a href="https://www.instagram.com/reds_hairdressing/" class="fa fa-instagram"></a>
+  </li>
+  </li>
+  <li>
+    <a href="https://api.whatsapp.com/send?phone=60177050269" class="fa fa-whatsapp"></a>
+  </li>
+  <h4 style="padding: 25px">
+  <li> <a href="tel:+607-2221318 ">+607-2221318</a> <a href="tel:+6017-7050269 ">+6017-7050269</a> </li>
+</h4>
+</ul>
+
+
+<!-- https://www.w3schools.com/bootstrap/bootstrap_theme_company.asp -->
+<div class="row">
+     <div class="col-sm-8" style="background-image: url('/static/info/images/redssss5.PNG'); background-repeat: no-repeat; background-size: 100% auto;">.col-md-4</div>
+     <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="col-sm-4">
+            <p> HAIR IS AN IMPORTANT ASPECT OF YOUR PERSONALITY & SHOULD BE WELL TAKEN CARE OF.<br/>
+HEALTHY HAIR, ACCOMPANIED WITH A GOOD HAIRCUT<br/>
+AND THE RIGHT HAIRSTYLE CAN ENHANCE YOUR FACIAL FEATURES,<br/>
+GIVING YOUR CONFIDENCE A BOOST. </p>
+</div>
+</div>
+
+
+<h1 style="text-align: center; padding: 100px; background-color: silver;">
+  ABOUT REDS HAIRDRESSING
+<br>
+<br>
+   </h1>
+
+<!-- Container (About Section) -->
+<div class="container-fluid ">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2><u> About Reds </u></h2>
+      <p>Established in 2004, the <strong> REDS </strong> brand has earned itself the name as the to-go-to hairdressing brand, given it’s reputation for the past three decades as Official Hair Sponsor for notable events.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+        <br>
+    </div>
+    <div class="col-sm-8">
+      <h2><u> Our Values </u></h2>
+      <h4><strong>OUR PHILOSOPHY</strong></h4>
+      <p> At REDS, we seek to understand what you need to Look Good, Feel Good. We want you to champion your world with a refreshed appearance. Our stylists are familiar with the newest fashions, trends and techniques,
+and will be there to guide you in every step of the way to find the perfect cut and style for you.
+You can count on our passionate team of PRO Stylists & Technicians
+to tailor each hairstyle to suit your features, personality and lifestyle.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+<div class="carousel slide" data-ride="carousel">
+    <div class="carousel-item">
+      <img src=" {% static 'info/images/redss2.PNG' %} " alt="Second slide" style="width:100%;">
+    </div>
+    <div class="carousel-item">
+      <img src=" {% static 'info/images/redss3.PNG' %} " alt="Third slide" style="width:100%;">
+    </div>
+  </div>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+
+
+<footer class="container-fluid bg-secondary text-center">
+  <h2> CONTACT</h2>
+
+  <ul>
+    <li><strong>redshairdressing99@gmail.com </strong></li>
+    <li><strong>+607 2221318</strong></li>
+    <li><strong>+6017 7050269</strong></li>
+    <li><strong> LOT J4-10, LEVEL 4, CITY SQUARE, JALAN WONG AH FOOK, 80000, JOHOR BAHRU. </strong></li>
+  </ul>
+</footer>
+
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
